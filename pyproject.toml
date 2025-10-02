@@ -20,6 +20,7 @@ django-slick-tables = { workspace = true }
 [dependency-groups]
 dev = [
     "django-slick-tables",
+    "djlint>=1.36.4",
     "pre-commit>=4.3.0",
     "ruff>=0.13.2",
     "setuptools>=80.9.0",
