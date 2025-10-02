@@ -8,4 +8,19 @@ dependencies = [
     "django==5.2",
     "django-htmx>=1.26.0",
     "ruff>=0.13.2",
+    "setuptools>=80.9.0",
+]
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+django-slick-tables = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "django-slick-tables",
+    "pre-commit>=4.3.0",
 ]
